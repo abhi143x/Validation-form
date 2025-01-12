@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --lg-lightcolor: linear-gradient(to left,rgba(116,235,213,0.6),rgba(159,172,230,0))
+    --lg-color: linear-gradient(to left,#74ebd5, #9face6);
+}
+
+body {
+
+background-color: darkgray;
+ background-size: 100%;
+ background-repeat: no-repeat;
+ font-family: 'Times New Roman', Times, serif;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ min-height: 100vh;
+ width: 100vw;
+}
+
+.container {
+    background-color: #d4caca;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    overflow: hidden;
+    width: calc(100vw-65vw);
+    max-width: 100%;
+}
+
+.header {
+     background-color: aquamarine;
+     padding: 25px 0;   
+}
+
+.header h2{
+    color:#222;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.form{
+    padding: 40px;
+}
+
+.form-control {
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.form-control label{
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.form-control input{
+    width: 100%;
+    border: 2px solid #f0f0f0;
+    border-radius: 5px;
+    height: 30px;
+    font-size: 14px;
+    padding: 12px;
+
+}
+
+.form-control input:focus{
+    outline: 0;
+    border-color: #777;
+}
+
+.form-control.success input{
+    border-color: green;
+}
+
+.form-control.error input{
+    border-color: red;
+}
+
+.form-control i{
+    position: absolute;
+    right: 8%;
+    top: 32px;
+    visibility: hidden;
+}
+
+.form-control.success i.fa-circle-check {
+    color: green;
+    visibility: visible;
+}
+
+.form-control .error i.fa-circle-exclamation {
+    color: red;
+    visibility: visible;
+}
+
+.form-control small {
+    color: red;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    visibility: hidden;
+}
+
+.form-control.error small{
+    visibility:visible;
+}
+
+.form .btn {
+    background-color: aquamarine;
+    border-radius: 6px;
+    border: none;
+    outline: none;
+    color:brown;
+    display: block;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    padding: 15px 0;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 1s ease;
+
+}
+
+.form .btn:hover{
+    background:linear-gradient(to right,#74ebd5,#9face6);
+}
+
+@media(max-width:998px) {
+    .container {
+        width: calc(100vw - 35vw);
+        max-width: 100%;
+    }
+}
+
+
